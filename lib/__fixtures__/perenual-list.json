@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "common_name": "European Silver Fir",
+      "scientific_name": ["Abies alba"],
+      "other_name": ["Common Silver Fir"],
+      "genus": "Abies",
+      "default_image": {
+        "image_id": 9,
+        "license": 5,
+        "regular_url": "https://perenual.com/storage/species_image/1_abies_alba/regular/1536px-Abies_alba_SkalitC3A9.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1_abies_alba/thumbnail/1536px-Abies_alba_SkalitC3A9.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "common_name": "Pyramidalis Silver Fir",
+      "scientific_name": ["Abies alba 'Pyramidalis'"],
+      "default_image": null
+    }
+  ],
+  "per_page": 30,
+  "current_page": 1,
+  "total": 2,
+  "last_page": 1
+}

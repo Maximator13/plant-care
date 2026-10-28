@@ -1,0 +1,12 @@
+{
+  "query": { "project": "all", "organs": ["auto"] },
+  "language": "fr",
+  "bestMatch": "Monstera deliciosa Liebm.",
+  "results": [
+    { "score": 0.81234, "species": { "scientificNameWithoutAuthor": "Monstera deliciosa", "scientificNameAuthorship": "Liebm.", "genus": { "scientificNameWithoutAuthor": "Monstera" }, "family": { "scientificNameWithoutAuthor": "Araceae" }, "commonNames": ["Faux philodendron", "Monstera"] } },
+    { "score": 0.06, "species": { "scientificNameWithoutAuthor": "Thaumatophyllum bipinnatifidum", "genus": { "scientificNameWithoutAuthor": "Thaumatophyllum" }, "family": { "scientificNameWithoutAuthor": "Araceae" }, "commonNames": [] } },
+    { "score": 0.02, "species": { "scientificNameWithoutAuthor": "Epipremnum aureum", "genus": { "scientificNameWithoutAuthor": "Epipremnum" }, "family": { "scientificNameWithoutAuthor": "Araceae" }, "commonNames": ["Pothos"] } },
+    { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Philodendron hederaceum", "genus": { "scientificNameWithoutAuthor": "Philodendron" }, "family": { "scientificNameWithoutAuthor": "Araceae" } } }
+  ],
+  "remainingIdentificationRequests": 497
+}

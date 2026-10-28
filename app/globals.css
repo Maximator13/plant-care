@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Dark mode follows the system preference (no in-app toggle in v1). */
+@custom-variant dark (@media (prefers-color-scheme: dark));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-raleway);
+  --font-serif: var(--font-lora);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* Provence: linen beige, lavender, olive, sun ochre, terracotta */
+  --radius: 0.75rem;
+  --background: #f6efe2;
+  --foreground: #3a2f24;
+  --card: #fffaf1;
+  --card-foreground: #3a2f24;
+  --popover: #fffaf1;
+  --popover-foreground: #3a2f24;
+  --primary: #6a4c93;
+  --primary-foreground: #ffffff;
+  --secondary: #5f6c30;
+  --secondary-foreground: #ffffff;
+  --muted: #efe4d2;
+  --muted-foreground: #6b5a45;
+  --accent: #e2b049;
+  --accent-foreground: #2b2117;
+  --destructive: #b0452c;
+  --destructive-foreground: #ffffff;
+  --border: #e4d6bf;
+  --input: #e4d6bf;
+  --ring: #6a4c93;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1d1823;
+    --foreground: #f2eadc;
+    --card: #28212f;
+    --card-foreground: #f2eadc;
+    --popover: #28212f;
+    --popover-foreground: #f2eadc;
+    --primary: #b9a3e3;
+    --primary-foreground: #1d1426;
+    --secondary: #a8b56a;
+    --secondary-foreground: #1a1d0c;
+    --muted: #2f2737;
+    --muted-foreground: #c4b6a3;
+    --accent: #e6b85c;
+    --accent-foreground: #2b2117;
+    --destructive: #e07a5f;
+    --destructive-foreground: #1a0d08;
+    --border: #3b3245;
+    --input: #3b3245;
+    --ring: #b9a3e3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+  time, .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Long-form legal pages */
+.legal h1 { @apply text-2xl font-semibold; }
+.legal h2 { @apply pt-2 text-lg font-semibold; }
+.legal ul { @apply list-disc space-y-1 pl-5; }
+.legal a { @apply underline underline-offset-4; }
+.legal .todo { @apply rounded bg-accent px-1 text-accent-foreground; }

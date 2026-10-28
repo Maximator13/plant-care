@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "common_name": "European Silver Fir",
+  "scientific_name": ["Abies alba"],
+  "watering": "Frequent",
+  "watering_general_benchmark": { "value": "\"7-10\"", "unit": "days" },
+  "sunlight": ["full sun", "part shade"],
+  "description": "Amazing garden plant that is sure to capture attention with its ability to thrive in a variety of conditions.",
+  "default_image": {
+    "image_id": 9,
+    "license": 5,
+    "regular_url": "https://perenual.com/storage/species_image/1_abies_alba/regular/1536px-Abies_alba_SkalitC3A9.jpg"
+  },
+  "cycle": "Perennial",
+  "care_level": "Medium"
+}
